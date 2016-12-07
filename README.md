@@ -1,6 +1,13 @@
 # KUSANAGI
 ![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Kusanagi/kusanagi-icon.jpg)
 
+- 環境
+  - AWS
+  - KUSANAGI: 8.0.1
+  - OS: CentOS Linux release 7.2.1511
+     - KUSANAGIのAMIからインストール
+  
+  
 #### KUSANAGIコマンドについて
 |コマンド    |内容         |
 |:-----------|:------------|
