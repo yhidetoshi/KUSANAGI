@@ -17,44 +17,9 @@
 |kusanagi fcache on |fcacheを有効にする|
 
 
-- `$ kusanagi status`のコマンドを実行
-  - 出力結果
 
 - kusanagiコマンドではなく、systemctlコマンドでnginxを起動した場合、Nginxのログが出力されてなかった。
   - kusanagiコマンドで起動する必要がある
-```
-*** nginx ***
-● nginx.service - The NGINX HTTP and reverse proxy server
-   Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; vendor preset: disabled)
-   Active: active (running) since 金 2016-11-11 16:48:58 JST; 37min ago
-
-*** Apache2 ***
-● httpd.service - The Apache HTTP Server
-   Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled; vendor preset: disabled)
-   Active: inactive (dead)
-
-*** HHVM ***
-● hhvm.service - HHVM virtual machine, runtime, and JIT for the PHP language
-   Loaded: loaded (/etc/systemd/system/hhvm.service; disabled; vendor preset: disabled)
-   Active: inactive (dead)
-
-*** php-fpm ***
-● php-fpm.service - The PHP FastCGI Process Manager
-   Loaded: loaded (/usr/lib/systemd/system/php-fpm.service; disabled; vendor preset: disabled)
-   Active: inactive (dead)
-
-*** php7-fpm ***
-● php7-fpm.service - The PHP FastCGI Process Manager
-   Loaded: loaded (/usr/lib/systemd/system/php7-fpm.service; enabled; vendor preset: disabled)
-   Active: active (running) since 金 2016-11-11 16:48:58 JST; 37min ago
-
-*** Cache Status ***
-
-fcache on
-bcache off
-完了しました
-
-```
 
 - bcacheを有効にする方法
    - `wp-config.php`に `define(‘WP_CACHE’, true);` を追加
