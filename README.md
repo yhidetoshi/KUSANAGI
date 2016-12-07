@@ -6,6 +6,9 @@
 |:-----------|:------------|
 |kusanagi status|kusanagiで管理しているモジュールの状態確認|
 |kusanagi restart|kusanagiで管理しているモジュールの再起動|
+|kusanagi bcache on |bcacheを有効にする|
+|kusanagi fcache on |fcacheを有効にする|
+
 
 - `$ kusanagi status`のコマンドを実行
   - 出力結果
