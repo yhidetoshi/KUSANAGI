@@ -63,3 +63,22 @@ bcache off
 - `# kusanagi bcache on`
 - `# kusanagi fcache on`
 
+
+### KUSANAGIインストール後のケア
+
+
+- WordPress管理画面のIP制限 80/443ポート　(アクセスできるクライアントをIPで制限する)
+ - /etc/nginx/conf.d/wordpress_http.conf
+ - wordpress_ssl.conf
+``` 
+location ~* /wp-login\.php|/wp-admin/((?!admin-ajax\.php).)*$ {
+
+                satisfy any;
+                allow <IP-Address>/32;
+                allow <IP-Address>/29;
+                allow 127.0.0.1;
+                deny all;
+                #auth_basic "basic authentication";
+                #auth_basic_user_file  "/home/kusanagi/.htpasswd";
+
+```
