@@ -45,3 +45,11 @@ bcache off
 完了しました
 
 ```
+
+- bcacheを有効にする方法
+   - `wp-config.php`に `define(‘WP_CACHE’, true);` を追加
+      - (参考)cacheを有効にする 参考（https://japan3d.net/web/kusanagi_php7_mysql_connect_bcache/）
+　 
+- `# kusanagi bcache on`
+- `# kusanagi fcache on`
+
