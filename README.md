@@ -9,6 +9,9 @@
 
 - `$ kusanagi status`のコマンドを実行
   - 出力結果
+
+- kusanagiコマンドではなく、systemctlコマンドでnginxを起動した場合、Nginxのログが出力されてなかった。
+  - kusanagiコマンドで起動する必要がある
 ```
 *** nginx ***
 ● nginx.service - The NGINX HTTP and reverse proxy server
