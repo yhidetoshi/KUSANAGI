@@ -1,6 +1,5 @@
 # KUSANAGI
-wordpress
-
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Kusanagi/kusanagi-icon.jpg)
 
 #### KUSANAGIコマンドについて
 |コマンド    |内容         |
