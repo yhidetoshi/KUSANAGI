@@ -66,6 +66,7 @@ bcache off
 
 ### KUSANAGIインストール後のケア
 
+#### WordPress管理画面の接続制限
 
 - WordPress管理画面のIP制限 80/443ポート　(アクセスできるクライアントをIPで制限する)
  - /etc/nginx/conf.d/wordpress_http.conf
@@ -81,4 +82,10 @@ location ~* /wp-login\.php|/wp-admin/((?!admin-ajax\.php).)*$ {
                 #auth_basic "basic authentication";
                 #auth_basic_user_file  "/home/kusanagi/.htpasswd";
 
+```
+
+#### Pingback攻撃対策
+- DocumentRoot/wp-content/thems/配下で使っているthemsのfunctions.phpに下記の１行を追加する。
+```
+add_filter('xmlrpc_enabled', '__return_false');
 ```
