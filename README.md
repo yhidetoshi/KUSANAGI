@@ -1,9 +1,8 @@
-# Kusanagi
+# KUSANAGI
 wordpress
 
 
-#### KUSANAGI
-
+#### KUSANAGIコマンドについて
 |コマンド    |内容         |
 |:-----------|:------------|
 |kusanagi status|kusanagiで管理しているモジュールの状態確認|
